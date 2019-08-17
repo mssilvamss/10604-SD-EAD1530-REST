@@ -22,7 +22,6 @@ type
     Button2: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure edtDocumentoClienteKeyPress(Sender: TObject; var Key: Char);
 
   private
     { Private-Deklarationen }
@@ -89,12 +88,6 @@ begin
 end;
 
 
-
-procedure TForm1.edtDocumentoClienteKeyPress(Sender: TObject; var Key: Char);
-begin
-  if not( key in['0'..'9',#08] ) then
-    Key := #0;
-end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
