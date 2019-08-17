@@ -1,9 +1,11 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
   Caption = 'Client'
-  ClientHeight = 256
-  ClientWidth = 597
+  ClientHeight = 248
+  ClientWidth = 584
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,6 +13,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -37,7 +40,7 @@ object Form1: TForm1
   object edtDocumentoCliente: TLabeledEdit
     Left = 16
     Top = 64
-    Width = 193
+    Width = 281
     Height = 21
     EditLabel.Width = 98
     EditLabel.Height = 13
@@ -47,7 +50,7 @@ object Form1: TForm1
   object cmbTamanhoPizza: TComboBox
     Left = 16
     Top = 109
-    Width = 193
+    Width = 281
     Height = 21
     TabOrder = 1
     Items.Strings = (
@@ -58,7 +61,7 @@ object Form1: TForm1
   object cmbSaborPizza: TComboBox
     Left = 16
     Top = 152
-    Width = 193
+    Width = 281
     Height = 21
     TabOrder = 2
     Items.Strings = (
@@ -67,8 +70,8 @@ object Form1: TForm1
       'enPortuguesa')
   end
   object Button1: TButton
-    Left = 104
-    Top = 217
+    Left = 16
+    Top = 209
     Width = 105
     Height = 25
     Caption = '&1 - Fazer Pedido'
@@ -105,5 +108,14 @@ object Form1: TForm1
     EditLabel.Caption = 'Porta Pizzaria Backend:'
     TabOrder = 6
     Text = '8080'
+  end
+  object btnConsultarPedido: TButton
+    Left = 192
+    Top = 209
+    Width = 105
+    Height = 25
+    Caption = '2 - Consulta Pedido'
+    TabOrder = 7
+    OnClick = btnConsultarPedidoClick
   end
 end
